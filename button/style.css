@@ -1,0 +1,76 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    outline: none;
+    width: 13rem;
+    height: 4rem;
+    background-color: #EBF3E8;
+    color: #86A789;
+    text-align: center;
+    border-radius: 4rem;
+    border: 0.2rem solid #86A789 ;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+
+button:hover{
+    color: #fff;
+    background-color: #86A789;
+}
+
+button:active{
+    letter-spacing: 0.2rem;
+
+}
+
+
+button::before{
+    content: 'Submit';
+}
+
+
+.effect1{
+ width: 4rem;
+ border-color: rgb(143, 137, 137);
+ border-width: 0.3rem;
+ border-right-color: #86A789;
+ animation: rotate 1s linear infinite;
+ background-color: #fff;
+ font-size: 0;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(260deg);  
+    }
+}
+
+
+.effect2{
+    background-color: #86A789;
+}
+
+.effect2::before{
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #fff;
+    font-size: 1.5rem;
+}
